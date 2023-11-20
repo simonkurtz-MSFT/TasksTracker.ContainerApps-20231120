@@ -10,6 +10,7 @@ Set-Variable -Scope Global -Name BACKEND_API_INTERNAL_BASE_URL -Value https://ta
 Set-Variable -Scope Global -Name BACKEND_API_NAME -Value tasksmanager-backend-api
 Set-Variable -Scope Global -Name BACKEND_API_PRINCIPAL_ID -Value 4da0c06e-f7e8-496b-8ba5-441fefbb7220
 Set-Variable -Scope Global -Name BACKEND_SERVICE_APP_PORT -Value 7297
+Set-Variable -Scope Global -Name BACKEND_SERVICE_NAME -Value tasksmanager-backend-processor
 Set-Variable -Scope Global -Name COSMOS_DB_ACCOUNT -Value cosmos-tasks-tracker-state-store-3fpetx
 Set-Variable -Scope Global -Name COSMOS_DB_CONTAINER -Value taskscollection
 Set-Variable -Scope Global -Name COSMOS_DB_DBNAME -Value tasksmanagerdb
@@ -22,7 +23,11 @@ Set-Variable -Scope Global -Name FRONTEND_WEBAPP_NAME -Value tasksmanager-fronte
 Set-Variable -Scope Global -Name LOCATION -Value eastus
 Set-Variable -Scope Global -Name RANDOM_STRING -Value 3fpetx
 Set-Variable -Scope Global -Name RESOURCE_GROUP -Value rg-tasks-tracker-3fpetx
+Set-Variable -Scope Global -Name REVISION_NAME -Value "tasksmanager-backend-api--v-2"
 Set-Variable -Scope Global -Name ROLE_ID -Value 00000000-0000-0000-0000-000000000002
+Set-Variable -Scope Global -Name SERVICE_BUS_NAMESPACE_NAME -Value sbns-taskstracker-3fpetx
+Set-Variable -Scope Global -Name SERVICE_BUS_TOPIC_NAME -Value tasksavedtopic
+Set-Variable -Scope Global -Name SERVICE_BUS_TOPIC_SUBSCRIPTION -Value sbts-tasks-processor
 Set-Variable -Scope Global -Name TARGET_PORT -Value 5000
 Set-Variable -Scope Global -Name UI_APP_PORT -Value 7108
 Set-Variable -Scope Global -Name VNET_NAME -Value vnet-tasks-tracker
@@ -30,4 +35,4 @@ Set-Variable -Scope Global -Name WORKSPACE_ID -Value cd80fcd8-4582-4db8-b444-489
 Set-Variable -Scope Global -Name WORKSPACE_NAME -Value log-tasks-tracker-3fpetx
 Set-Variable -Scope Global -Name WORKSPACE_SECRET -Value 6mLVOgmLkkAfHxW++LmnIItUrSGmGIQcltphnwFcud+3d57phlV7e3wYxZ7IaZKgciP73i+5nAxrrzrNQ/EOEw==
 Set-Variable -Scope Global -Name TODAY -Value (Get-Date -Format 'yyyyMMdd')
-Write-Host "Set 31 variables."
+Write-Host "Set 36 variables."
