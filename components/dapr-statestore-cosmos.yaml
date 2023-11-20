@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+spec:
+  type: state.azure.cosmosdb
+  version: v1
+  metadata:
+    - name: url
+      value: https://cosmos-tasks-tracker-state-store-3fpetx.documents.azure.com:443/
+    - name: masterKey
+      value: "mAokBwj9A6ODB6H520PzfW4S3qmZ2bDbLTOz1CI19UlpyZxOTrH2MUd1innHpa8An71lIQwfXRygACDbZXr9Ag=="
+    - name: database
+      value: tasksmanagerdb
+    - name: collection
+      value: taskscollection
+scopes:
+  - tasksmanager-backend-api
