@@ -8,6 +8,12 @@ Set-Variable -Scope Global -Name AZURE_SUBSCRIPTION_ID -Value 5fb73327-9152-4f64
 Set-Variable -Scope Global -Name BACKEND_API_EXTERNAL_BASE_URL -Value https://tasksmanager-backend-api.livelypebble-1933abe8.eastus.azurecontainerapps.io
 Set-Variable -Scope Global -Name BACKEND_API_INTERNAL_BASE_URL -Value https://tasksmanager-backend-api.internal.livelypebble-1933abe8.eastus.azurecontainerapps.io
 Set-Variable -Scope Global -Name BACKEND_API_NAME -Value tasksmanager-backend-api
+Set-Variable -Scope Global -Name BACKEND_API_PRINCIPAL_ID -Value 4da0c06e-f7e8-496b-8ba5-441fefbb7220
+Set-Variable -Scope Global -Name COSMOS_DB_ACCOUNT -Value cosmos-tasks-tracker-state-store-3fpetx
+Set-Variable -Scope Global -Name COSMOS_DB_CONTAINER -Value taskscollection
+Set-Variable -Scope Global -Name COSMOS_DB_DBNAME -Value tasksmanagerdb
+Set-Variable -Scope Global -Name COSMOS_DB_ENDPOINT -Value https://cosmos-tasks-tracker-state-store-3fpetx.documents.azure.com:443/
+Set-Variable -Scope Global -Name COSMOS_DB_PRIMARY_MASTER_KEY -Value mAokBwj9A6ODB6H520PzfW4S3qmZ2bDbLTOz1CI19UlpyZxOTrH2MUd1innHpa8An71lIQwfXRygACDbZXr9Ag==
 Set-Variable -Scope Global -Name ENVIRONMENT -Value cae-tasks-tracker
 Set-Variable -Scope Global -Name FRONTEND_UI_BASE_URL -Value https://tasksmanager-frontend-webapp.livelypebble-1933abe8.eastus.azurecontainerapps.io
 Set-Variable -Scope Global -Name FRONTEND_UI_BASE_URL_LOCAL -Value https://localhost:7108
@@ -15,6 +21,7 @@ Set-Variable -Scope Global -Name FRONTEND_WEBAPP_NAME -Value tasksmanager-fronte
 Set-Variable -Scope Global -Name LOCATION -Value eastus
 Set-Variable -Scope Global -Name RANDOM_STRING -Value 3fpetx
 Set-Variable -Scope Global -Name RESOURCE_GROUP -Value rg-tasks-tracker-3fpetx
+Set-Variable -Scope Global -Name ROLE_ID -Value 00000000-0000-0000-0000-000000000002
 Set-Variable -Scope Global -Name TARGET_PORT -Value 5000
 Set-Variable -Scope Global -Name UI_APP_PORT -Value 7108
 Set-Variable -Scope Global -Name VNET_NAME -Value vnet-tasks-tracker
@@ -22,4 +29,4 @@ Set-Variable -Scope Global -Name WORKSPACE_ID -Value cd80fcd8-4582-4db8-b444-489
 Set-Variable -Scope Global -Name WORKSPACE_NAME -Value log-tasks-tracker-3fpetx
 Set-Variable -Scope Global -Name WORKSPACE_SECRET -Value 6mLVOgmLkkAfHxW++LmnIItUrSGmGIQcltphnwFcud+3d57phlV7e3wYxZ7IaZKgciP73i+5nAxrrzrNQ/EOEw==
 Set-Variable -Scope Global -Name TODAY -Value (Get-Date -Format 'yyyyMMdd')
-Write-Host "Set 23 variables."
+Write-Host "Set 30 variables."
