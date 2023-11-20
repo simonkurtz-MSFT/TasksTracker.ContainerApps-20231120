@@ -11,7 +11,7 @@ Set-Variable -Scope Global -Name BACKEND_API_NAME -Value tasksmanager-backend-ap
 Set-Variable -Scope Global -Name BACKEND_API_PRINCIPAL_ID -Value 4da0c06e-f7e8-496b-8ba5-441fefbb7220
 Set-Variable -Scope Global -Name BACKEND_SERVICE_APP_PORT -Value 7297
 Set-Variable -Scope Global -Name BACKEND_SERVICE_NAME -Value tasksmanager-backend-processor
-Set-Variable -Scope Global -Name BACKEND_SERVICE_PRINCIPAL_ID -Value "d2c7c3af-00cc-4e7f-893c-cc877852c74c"
+Set-Variable -Scope Global -Name BACKEND_SERVICE_PRINCIPAL_ID -Value d2c7c3af-00cc-4e7f-893c-cc877852c74c
 Set-Variable -Scope Global -Name COSMOS_DB_ACCOUNT -Value cosmos-tasks-tracker-state-store-3fpetx
 Set-Variable -Scope Global -Name COSMOS_DB_CONTAINER -Value taskscollection
 Set-Variable -Scope Global -Name COSMOS_DB_DBNAME -Value tasksmanagerdb
@@ -29,10 +29,11 @@ Set-Variable -Scope Global -Name RANDOM_STRING -Value 3fpetx
 Set-Variable -Scope Global -Name RESOURCE_GROUP -Value rg-tasks-tracker-3fpetx
 Set-Variable -Scope Global -Name REVISION_NAME -Value tasksmanager-backend-api--v-2
 Set-Variable -Scope Global -Name ROLE_ID -Value 00000000-0000-0000-0000-000000000002
+Set-Variable -Scope Global -Name SERVICE_BUS_CONNECTION_STRING -Value Endpoint=sb://sbns-taskstracker-3fpetx.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=UpvDNx/3uk3q2a7Q5iRFiJEnV2C7o3uu3+ASbMzRz78=
 Set-Variable -Scope Global -Name SERVICE_BUS_NAMESPACE_NAME -Value sbns-taskstracker-3fpetx
 Set-Variable -Scope Global -Name SERVICE_BUS_TOPIC_NAME -Value tasksavedtopic
 Set-Variable -Scope Global -Name SERVICE_BUS_TOPIC_SUBSCRIPTION -Value sbts-tasks-processor
-Set-Variable -Scope Global -Name SIGNEDIN_USERID -Value "744cffd5-e99d-4cc0-9fe3-2d284e07a1c4"
+Set-Variable -Scope Global -Name SIGNEDIN_USERID -Value 744cffd5-e99d-4cc0-9fe3-2d284e07a1c4
 Set-Variable -Scope Global -Name STORAGE_ACCOUNT_NAME -Value sttaskstracker3fpetx
 Set-Variable -Scope Global -Name STORAGE_ACCOUNT_KEY -Value mrtTwIrwv8bfKzCkF4I4Ib0r2TQTQbUCaix6bWv7Y1cMD00SROyPR22+8pWPW0V2g6N2u/NRht/Q+AStERMYKg==
 Set-Variable -Scope Global -Name TARGET_PORT -Value 5000
@@ -42,4 +43,4 @@ Set-Variable -Scope Global -Name WORKSPACE_ID -Value cd80fcd8-4582-4db8-b444-489
 Set-Variable -Scope Global -Name WORKSPACE_NAME -Value log-tasks-tracker-3fpetx
 Set-Variable -Scope Global -Name WORKSPACE_SECRET -Value 6mLVOgmLkkAfHxW++LmnIItUrSGmGIQcltphnwFcud+3d57phlV7e3wYxZ7IaZKgciP73i+5nAxrrzrNQ/EOEw==
 Set-Variable -Scope Global -Name TODAY -Value (Get-Date -Format 'yyyyMMdd')
-Write-Host "Set 43 variables."
+Write-Host "Set 44 variables."
