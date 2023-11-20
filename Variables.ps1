@@ -9,6 +9,7 @@ Set-Variable -Scope Global -Name BACKEND_API_EXTERNAL_BASE_URL -Value https://ta
 Set-Variable -Scope Global -Name BACKEND_API_INTERNAL_BASE_URL -Value https://tasksmanager-backend-api.internal.livelypebble-1933abe8.eastus.azurecontainerapps.io
 Set-Variable -Scope Global -Name BACKEND_API_NAME -Value tasksmanager-backend-api
 Set-Variable -Scope Global -Name BACKEND_API_PRINCIPAL_ID -Value 4da0c06e-f7e8-496b-8ba5-441fefbb7220
+Set-Variable -Scope Global -Name BACKEND_SERVICE_APP_PORT -Value 7297
 Set-Variable -Scope Global -Name COSMOS_DB_ACCOUNT -Value cosmos-tasks-tracker-state-store-3fpetx
 Set-Variable -Scope Global -Name COSMOS_DB_CONTAINER -Value taskscollection
 Set-Variable -Scope Global -Name COSMOS_DB_DBNAME -Value tasksmanagerdb
@@ -29,4 +30,4 @@ Set-Variable -Scope Global -Name WORKSPACE_ID -Value cd80fcd8-4582-4db8-b444-489
 Set-Variable -Scope Global -Name WORKSPACE_NAME -Value log-tasks-tracker-3fpetx
 Set-Variable -Scope Global -Name WORKSPACE_SECRET -Value 6mLVOgmLkkAfHxW++LmnIItUrSGmGIQcltphnwFcud+3d57phlV7e3wYxZ7IaZKgciP73i+5nAxrrzrNQ/EOEw==
 Set-Variable -Scope Global -Name TODAY -Value (Get-Date -Format 'yyyyMMdd')
-Write-Host "Set 30 variables."
+Write-Host "Set 31 variables."
